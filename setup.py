@@ -14,9 +14,9 @@ setup(
     license="MIT License",
     long_description=read_me,
     long_description_content_type="text/markdown",
-    packages=find_packages(where="stubs"),
+    #packages=find_packages(where="stubs"),
     package_dir={"": "stubs"},
-    include_package_data=True,
+    #include_package_data=True,
     package_data={
         "networkx": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
     },
