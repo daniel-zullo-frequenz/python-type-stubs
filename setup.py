@@ -15,10 +15,10 @@ setup(
     long_description=read_me,
     long_description_content_type="text/markdown",
     package_data={
-        "stubs/networkx": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
+        "networkx": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
     },
     packages=[
-        "networkx",
+        "stubs/networkx",
     ],
     python_requires=">=3.11",
     zip_safe=False,
