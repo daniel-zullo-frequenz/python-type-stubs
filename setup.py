@@ -14,11 +14,14 @@ setup(
     license="MIT License",
     long_description=read_me,
     long_description_content_type="text/markdown",
+    packages=find_packages(where="stubs"),
+    package_dir={"": "stubs"},
+    include_package_data=True
     package_data={
         "networkx": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
     },
     packages=[
-        "stubs/networkx",
+        "networkx",
     ],
     python_requires=">=3.11",
     zip_safe=False,
