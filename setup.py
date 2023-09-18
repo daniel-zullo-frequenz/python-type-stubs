@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(where="stubs"),
     package_dir={"": "stubs"},
-    include_package_data=True
+    include_package_data=True,
     package_data={
         "networkx": ["*.pyi", "**/*.pyi", "**/**/*.pyi", "**/**/**/*.pyi"],
     },
